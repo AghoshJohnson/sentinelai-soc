@@ -1,0 +1,27 @@
+# ============================================================
+# AI SOC Assistant — Python Dependencies
+# ============================================================
+# Python 3.10+ required
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# For development (includes test tooling):
+#   pip install -r requirements.txt -r requirements-dev.txt
+# ============================================================
+
+# ── Core runtime ─────────────────────────────────────────────
+requests>=2.31.0,<3.0
+python-dotenv>=1.0.0,<2.0
+
+# ── GUI (Streamlit) ───────────────────────────────────────────
+streamlit>=1.32.0,<2.0
+pandas>=2.0.0,<3.0         # used by Streamlit dataframe + timeline chart
+
+# ── Report generation ─────────────────────────────────────────
+# PDF export (optional bonus feature — install separately if needed)
+# reportlab>=4.1.0
+
+# ── Type checking & static analysis (optional, not required at runtime) ───
+# mypy>=1.8.0
+# ruff>=0.3.0
